@@ -49,6 +49,9 @@ export function ChatView({
           onChange={(event) => onInputChange(event.target.value)}
           placeholder="Type a message..."
           disabled={isBusy}
+          name="message"
+          aria-label="Message"
+          autoComplete="off"
         />
         <button type="submit" disabled={isBusy}>
           Send
