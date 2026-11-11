@@ -29,5 +29,8 @@ jobs:
       - name: Type check
         run: npx next typegen && npx tsc --noEmit
 
+      - name: Run tests
+        run: npm run test:run
+
       - name: Build project
         run: npm run build
